@@ -1,14 +1,14 @@
 var DIBus = function() {
   var self = this;
   this.registeredModules = [];
-  this.registerModule = function(moduleToRun) {
+  this.register = function(moduleToRun) {
     if (typeof moduleToRun.service == 'function') {
       self.registeredModules.push(moduleToRun);
       checkAllModules();
       // startModule(moduleToRun);
     }
   };
-  this.newInstance = function() {
+  this.new = function() {
     return new DIBus();
   };
   
