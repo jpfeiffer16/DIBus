@@ -1,0 +1,16 @@
+{
+  "name": "dibus",
+  "version": "0.1.0",
+  "description": "A dependency injection framework for shared-reference development",
+  "main": "diBus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "DIBus",
+    "dependency",
+    "injection"
+  ],
+  "author": "Joe Pfeiffer",
+  "license": "ISC"
+}
