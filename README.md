@@ -1,15 +1,17 @@
-#DIBus
+# DIBus
 A dependency injection framework for shared-reference development
 
-##API
+# API
 Modules should be exposed in the format of an object with a name and service property. See the examples below.
 First require the module with `var DIBus = require('dibus');`
 
+
+#### Methods
 `DIBus.new()` - Return a new instance of the DIBus.
 
 `DIBUS.register(module)` - Register a module with the `DIBus` it will be instantiated and injected into other modules that depend upon it in their pram list.
 
-##Example
+# Examples
 ```javascript
   var modulea = {
     name: 'a',
@@ -21,7 +23,7 @@ First require the module with `var DIBus = require('dibus');`
     name: 'b',
     service: function(a) {
       console.log('Module b loaded');
-      console.dir(b);
+      console.dir(a);
     }
   };
 
