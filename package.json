@@ -4,7 +4,7 @@
   "description": "A dependency injection framework for shared-reference development",
   "main": "diBus.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha ./tests.js"
   },
   "keywords": [
     "DIBus",
@@ -12,5 +12,8 @@
     "injection"
   ],
   "author": "Joe Pfeiffer",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
 }

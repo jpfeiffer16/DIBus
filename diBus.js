@@ -5,7 +5,6 @@ var DIBus = function() {
     if (typeof moduleToRun.service == 'function') {
       self.registeredModules.push(moduleToRun);
       checkAllModules();
-      // startModule(moduleToRun);
     }
   };
   this.new = function() {
